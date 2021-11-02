@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <div className="">
+    <div className=" p-4 bg-spotify text-white">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo
       animi, architecto eius optio sapiente dicta ipsam amet itaque quis fugiat
       dolores veniam praesentium magnam nulla vel ducimus ut qui! Iure, harum?
