@@ -1,18 +1,11 @@
-import Head from "next/head";
-
-import SideBar from "../components/SideBar";
+import SongTable from "../components/song-table";
 import Content from "../components/Content";
 
 export default function Home() {
   return (
-    <div className="flex">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <SideBar />
+    <div className="p-4 flex flex-col bg-spotify text-white">
+      <SongTable />
       <Content />
-      {/* <div className="bg-black h-screen">Hello</div> */}
     </div>
   );
 }

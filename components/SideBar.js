@@ -3,6 +3,7 @@ import {
   HeartIcon,
   CogIcon,
   SearchIcon,
+  QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
 
 const SideBar = () => {
@@ -11,13 +12,19 @@ const SideBar = () => {
       className=" bg-black h-screen 
       sticky top-0 
       flex flex-col
-      px-1"
+      px-1 shadow-md
+      font-light"
     >
       <Logo />
-      <Item Icon={HomeIcon} text="Home" />
-      <Item Icon={SearchIcon} text="Search" />
-      <Item Icon={HeartIcon} text="Favorites" />
-      <Item Icon={CogIcon} text="Settings" />
+      <div className=" border-b-2 border-gray-400 border-opacity-50">
+        <Item Icon={HomeIcon} text="Home" />
+        <Item Icon={SearchIcon} text="Search" />
+        <Item Icon={HeartIcon} text="Favorites" />
+      </div>
+      <div className="">
+        <Item Icon={CogIcon} text="Settings" />
+        <Item Icon={QuestionMarkCircleIcon} text="About" />
+      </div>
     </div>
   );
 };
